@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BackendService } from './services/backend.service';
+import { StoreService } from './services/store.service';
 
 @NgModule({
   declarations: [],
@@ -8,7 +9,8 @@ import { BackendService } from './services/backend.service';
     CommonModule
   ],
   providers: [
-    BackendService
+    BackendService,
+    StoreService,
   ]
 })
 export class SharedModule { }
